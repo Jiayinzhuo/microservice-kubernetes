@@ -1,6 +1,6 @@
 node {
   stage('SCM checkout') {
-    git 'https://github.com/Thegaijin/microservice-kubernetes.git'
+    git 'https://github.com/Jiayinzhuo/microservice-kubernetes.git'
   }
 
   stage('test') {
@@ -21,7 +21,7 @@ node {
 
   stage('login to dockerhub') {
     withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerhubpwd')]) {
-      sh 'docker login -u thegaijin -p ${dockerhubpwd}'
+      sh 'docker login -u jiayinzhuo -p ${dockerhubpwd}'
     }
   }
 

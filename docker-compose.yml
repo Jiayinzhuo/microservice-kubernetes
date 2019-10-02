@@ -2,7 +2,7 @@ version: '2.1'
 services:
   catalog:
     build: microservice-kubernetes-demo-catalog/.
-    image: thegaijin/catalog
+    image: jiayinzhuo/catalog
     restart: always
     ports:
       - 9000:8080
@@ -10,14 +10,14 @@ services:
   customer:
     build: microservice-kubernetes-demo-customer/.
     container_name: customer
-    image: thegaijin/customer
+    image: jiayinzhuo/customer
     restart: always
     ports:
       - 9000:8080
 
   hystrix-dashboard:
     build: microservice-kubernetes-demo-hystrix-dashboard/.
-    image: thegaijin/dashboard
+    image: jiayinzhuo/dashboard
     restart: always
     ports:
       - 8989:8989
@@ -25,7 +25,7 @@ services:
   order:
     build: microservice-kubernetes-demo-order/.
     container_name: order
-    image: thegaijin/order
+    image: jiayinzhuo/order
     restart: always
     ports:
       - 9000:8080

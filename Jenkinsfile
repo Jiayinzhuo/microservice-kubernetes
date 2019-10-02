@@ -3,7 +3,7 @@ node {
     git 'https://github.com/Jiayinzhuo/microservice-kubernetes.git'
   }
 
-  stage('test') {
+  stage('clean and test') {
     def mvnHome = tool name:'M3', type: 'maven'
     def mvnCMD = "${mvnHome}/bin/mvn"
     sh "${mvnCMD} clean test"

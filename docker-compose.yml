@@ -17,7 +17,7 @@ services:
 
   hystrix-dashboard:
     build: microservice-kubernetes-demo-hystrix-dashboard/.
-    image: jiayinzhuo/dashboard
+    image: jiayinzhuo/hystrix-dashboard
     restart: always
     ports:
       - 8989:8989

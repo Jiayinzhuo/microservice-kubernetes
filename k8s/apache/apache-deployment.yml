@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: apache
-          image: jiayinzhuo/demo-apache
+          image: jiayinzhuo/microservice-kubernetes-demo-apache
           ports:
             - containerPort: 80
 ---

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-kubectl run apache --image=jiayinzhuo/demo-apache --port=80
+kubectl run apache --image=jiayinzhuo/microservice-kubernetes-demo-apache --port=80
 kubectl expose deployment/apache --type="LoadBalancer" --port 80
 kubectl run catalog --image=jiayinzhuo/catalog --port=8080
 kubectl expose deployment/catalog --type="LoadBalancer" --port 8080

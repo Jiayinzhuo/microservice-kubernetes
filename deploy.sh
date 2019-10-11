@@ -1,5 +1,4 @@
 #!/bin/bash
-# Change to wriggle Jenkins
 kubectl expose deployment/apache --type="LoadBalancer" --port 80
 kubectl expose deployment/catalog --type="LoadBalancer" --port 8080
 # kubectl expose deployment/customer --type="LoadBalancer" --port 8080

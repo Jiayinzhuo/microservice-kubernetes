@@ -23,7 +23,7 @@ public class CustomerApp {
 	@PostConstruct
 	public void generateTestData() {
 		customerRepository
-				.save(new Customer("Eberhard", "Wolff", "eberhard.wolff@gmail.com", "Unter den Linden", "Berlin"));
+				.save(new Customer("Jonathan", "Zhuo", "jonathan.zhuo@gmail.com", "Main Street", "New York"));
 		customerRepository.save(new Customer("Rod", "Johnson", "rod@somewhere.com", "Market Street", "San Francisco"));
 	}
 

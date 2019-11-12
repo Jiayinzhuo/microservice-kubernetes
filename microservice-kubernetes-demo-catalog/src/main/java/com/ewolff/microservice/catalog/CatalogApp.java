@@ -22,10 +22,10 @@ public class CatalogApp {
 
 	@PostConstruct
 	public void generateTestData() {
-		itemRepository.save(new Item("iPod", 42.0));
-		itemRepository.save(new Item("iPod touch", 21.0));
-		itemRepository.save(new Item("iPod nano", 1.0));
-		itemRepository.save(new Item("Apple TV", 100.0));
+		itemRepository.save(new Item("iPad", 329.0));
+		itemRepository.save(new Item("iPad Air", 499.0));
+		itemRepository.save(new Item("iPad mini", 399.0));
+		itemRepository.save(new Item("iPad Pro", 799.0));
 	}
 
 	public static void main(String[] args) {

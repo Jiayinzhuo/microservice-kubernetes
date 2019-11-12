@@ -27,6 +27,6 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort: 30857
+      nodePort: 30822
   selector:
     app: hystrix-dashboard

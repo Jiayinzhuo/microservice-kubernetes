@@ -25,8 +25,8 @@ spec:
   type: LoadBalancer
   externalTrafficPolicy: Cluster
   ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 31817
+    - port: 8080
+      targetPort: 8080
+      nodePort: 31819
   selector:
     app: catalog

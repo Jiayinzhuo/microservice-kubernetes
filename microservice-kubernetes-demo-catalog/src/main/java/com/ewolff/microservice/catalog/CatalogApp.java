@@ -25,7 +25,7 @@ public class CatalogApp {
 		itemRepository.save(new Item("iPad", 329.0));
 		itemRepository.save(new Item("iPad Air", 499.0));
 		itemRepository.save(new Item("iPad mini", 399.0));
-		itemRepository.save(new Item("iPad Pro", 799.0));
+		itemRepository.save(new Item("iPad Pro", 699.0));
 	}
 
 	public static void main(String[] args) {

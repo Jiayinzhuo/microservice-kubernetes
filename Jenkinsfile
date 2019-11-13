@@ -1,35 +1,35 @@
 node {
-  stage('SCM checkout') {
+  stage('SCM Checkout uses GitHub') {
     git 'https://github.com/Jiayinzhuo/microservice-kubernetes.git'
   }
 
-  stage('clean and test') {
+  stage('Tool Installation') {
     def mvnHome = tool name:'M3', type: 'maven'
     def mvnCMD = "${mvnHome}/bin/mvn"
     sh "${mvnCMD} clean test"
   }
 
-  stage('compile and package') {
+  stage('Compile and Package Uses Maven') {
     def mvnHome = tool name:'M3', type: 'maven'
     def mvnCMD = "${mvnHome}/bin/mvn"
     sh "${mvnCMD} clean package"
   }
 
-  stage('Build docker images') {
+  stage('Build Docker Images') {
     sh 'docker-compose build'
   }
 
-  stage('login to dockerhub') {
+  stage('Login to Docker Hub') {
     withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerhubpwd')]) {
       sh 'docker login -u jiayinzhuo -p ${dockerhubpwd}'
     }
   }
 
-  stage('Push images to dockerhub') {
+  stage('Push Images to Docker Hub') {
     sh 'docker-compose push'
   }
 
-  stage('deploy') {
+  stage('Deploy to Kubernetes Cluster') {
     sh 'kubectl apply -R -f ./k8s'
   }
 }

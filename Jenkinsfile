@@ -30,6 +30,6 @@ node {
   }
 
   stage('deploy') {
-    sh 'kubectl apply -R -f ./k8s'
+    sh 'echo "jonathan" | kubectl apply -R -f ./k8s'
   }
 }

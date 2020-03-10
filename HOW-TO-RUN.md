@@ -92,7 +92,7 @@ images and upload them to the public Docker Hub:
 ```
 [~/microservice-kubernetes/microservice-kubernetes-demo]export DOCKER_ACCOUNT=jiayinzhuo
 [~/microservice-kubernetes/microservice-kubernetes-demo]echo $DOCKER_ACCOUNT
-ewolff
+jiayinzhuo
 [~/microservice-kubernetes/microservice-kubernetes-demo]./docker-build.sh
 ...
 Removing intermediate container 36e9b0c2ac0e

@@ -19,8 +19,7 @@ This is a step-by-step guide how to run the example:
 This step is _optional_. There are Docker images on the public Docker
 Hub that are used if you do not build your own.
 
-- The example is implemented in Java. See
-  https://www.java.com/en/download/help/download_options.xml . The
+- The example is implemented in Java. The
   examples need to be compiled so you need to install a JDK (Java
   Development Kit). A JRE (Java Runtime Environment) is not
   sufficient. After the installation you should be able to execute
@@ -91,7 +90,7 @@ images and upload them to the public Docker Hub:
   some time:
 
 ```
-[~/microservice-kubernetes/microservice-kubernetes-demo]export DOCKER_ACCOUNT=ewolff
+[~/microservice-kubernetes/microservice-kubernetes-demo]export DOCKER_ACCOUNT=jiayinzhuo
 [~/microservice-kubernetes/microservice-kubernetes-demo]echo $DOCKER_ACCOUNT
 ewolff
 [~/microservice-kubernetes/microservice-kubernetes-demo]./docker-build.sh

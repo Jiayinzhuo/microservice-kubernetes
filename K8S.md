@@ -39,7 +39,7 @@ Each service file will look something like this
 
 We also have a docker compose which is used to build, start, pull or push all the docker images at the the same time to avoid repeating the same commands several times.
 
-If you would like to build your own images, in the docker compose file, assuming you have a docker hub account, edit the image names replacing anywhere you see `thegaijin` with your dockerhub username.
+If you would like to build your own images, in the docker compose file, assuming you have a docker hub account, edit the image names replacing anywhere you see `jiayinzhuo` with your dockerhub username.
 
 After that, run
 

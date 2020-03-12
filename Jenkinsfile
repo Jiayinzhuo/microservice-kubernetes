@@ -30,6 +30,7 @@ node {
   }
 
   stage('Deploy to Kubernetes Cluster') {
-    sh 'kubectl apply -R -f ./k8s'
+	sh 'echo "Deploy to Kubernetes"'
+   sh 'kubectl apply -R -f ./k8s'
   }
 }

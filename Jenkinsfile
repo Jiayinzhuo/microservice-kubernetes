@@ -26,6 +26,8 @@ node {
   }
 
   stage('Push Images to Docker Hub') {
+  	sh 'echo "Push to Docker Hub"'
+ 
     sh 'docker-compose push'
   }
 
